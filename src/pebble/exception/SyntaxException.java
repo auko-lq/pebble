@@ -3,7 +3,6 @@ package pebble.exception;
 
 import pebble.ast.Token;
 import pebble.ast.node.ASTree;
-import pebble.run.FunctionEvaluator;
 
 /**
  * @author: auko

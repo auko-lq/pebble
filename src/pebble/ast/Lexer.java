@@ -16,14 +16,6 @@ import java.util.regex.Pattern;
  */
 public class Lexer {
 
-    public static void main(String[] args) throws ParseException {
-        Lexer l = new Lexer(new CodeDialog());
-        for (Token token; l.hasNext(); ) {
-            token = l.next();
-            System.out.println("=> " + token.getText() + "  " + token.getType());
-        }
-    }
-
     public static String regexPat = "\\s*((//.*)|([0-9]+)|(\"(\\\\\"|\\\\\\\\|\\\\n|[^\"])*\")"
             + "|[A-Z_a-z][A-Z_a-z0-9]*|==|<=|>=|&&|\\|\\||\\p{Punct})?";
     private Pattern pattern = Pattern.compile(regexPat);

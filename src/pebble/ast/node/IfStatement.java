@@ -1,7 +1,7 @@
 package pebble.ast.node;
 
-import pebble.run.Environment;
-import pebble.run.NestedEnvironment;
+import pebble.run.environment.Environment;
+import pebble.run.environment.NestedEnvironment;
 
 import java.util.List;
 

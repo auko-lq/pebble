@@ -1,6 +1,6 @@
-package pebble.run;
+package pebble.run.environment;
 
-import pebble.run.FunctionEvaluator.*;
+import pebble.run.evaluator.FunctionEvaluator.*;
 
 import java.util.HashMap;
 

@@ -1,12 +1,12 @@
-package pebble.run;
+package pebble.run.evaluator;
 
 import javassist.gluonj.Require;
 import javassist.gluonj.Reviser;
 import pebble.ast.node.*;
 import pebble.exception.PebbleException;
-import pebble.exception.SyntaxException;
+import pebble.run.environment.Environment;
 
-import static pebble.run.BasicEvaluator.*;
+import static pebble.run.evaluator.BasicEvaluator.*;
 
 import java.util.List;
 

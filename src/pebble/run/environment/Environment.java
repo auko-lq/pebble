@@ -1,4 +1,4 @@
-package pebble.run;
+package pebble.run.environment;
 
 
 public interface Environment {

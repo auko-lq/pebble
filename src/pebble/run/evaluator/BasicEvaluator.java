@@ -1,11 +1,12 @@
-package pebble.run;
+package pebble.run.evaluator;
 
 import javassist.gluonj.Reviser;
 import pebble.ast.*;
 import pebble.ast.node.*;
 import pebble.exception.PebbleException;
 import pebble.exception.SyntaxException;
-import pebble.run.FunctionEvaluator.EnvironmentExtend;
+import pebble.run.environment.Environment;
+import pebble.run.evaluator.FunctionEvaluator.EnvironmentExtend;
 
 import java.util.List;
 
@@ -123,7 +124,7 @@ public class BasicEvaluator {
             ASTree l = left();
             if (l instanceof Name) {
                 if(env.get(((Name)l).getName()) == null){
-                    throw new SyntaxException(((Name)l).getName() + " is NaN", l);
+                    throw new PebbleException("undefined name: " + ((Name)l).getName(), this);
                 }
                 env.put(((Name) l).getName(), rvalue);
                 return rvalue;
