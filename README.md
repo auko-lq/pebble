@@ -18,10 +18,10 @@ Implement this language just to try something new, so I named it Pebble, simple 
 - [x] function
 - [x] closure
 - [x] scope management
+- [x] associated Java syntax
+- [x] array
+- [x] OOP
 - [ ] decimal operations
-- [ ] associated Java syntax
-- [ ] OOP
-- [ ] array
 - [ ] optimization in all aspects
 - [ ] run from the command line
 
