@@ -1,6 +1,6 @@
 # Pebble
 
-Reference from Stone (《两周自制脚本语言》)
+Reference from [Stone](https://github.com/chibash/stone)
 
 Added comments on it, and added own implementation syntax
 
