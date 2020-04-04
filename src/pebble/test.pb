@@ -23,9 +23,9 @@ class B extends A{
 var a = A.new;
 var b = B.new;
 
-println("A中的数组有 : ")
+println("A : ")
 a.testA()
-println("B中的数组有 : ")
+println("B : ")
 b.testB()
-println("B的父类数组有 : ")
+println("super : ")
 b.testA()

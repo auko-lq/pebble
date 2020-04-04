@@ -1,7 +1,6 @@
 package pebble.ast;
 
 import pebble.exception.ParseException;
-import stone.CodeDialog;
 
 import java.io.IOException;
 import java.io.LineNumberReader;

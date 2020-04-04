@@ -19,6 +19,8 @@ import java.io.FileReader;
  * @data 2020-03-13 0:30
  */
 public class BasicInterpreter {
+    private static String fileName = "E:\\project\\java\\pebble\\stone\\pebble\\src\\pebble\\test.pb";
+
     public static void main(String[] args) throws ParseException {
         run(new BasicParser(), new BasicEnvironment());
     }
@@ -27,10 +29,12 @@ public class BasicInterpreter {
     {
         Lexer lexer;
         try {
-            lexer = new Lexer(new FileReader("E:\\project\\java\\pebble\\stone\\pebble\\src\\pebble\\test.pb"));
+            lexer = new Lexer(new FileReader(fileName));
         } catch (FileNotFoundException e) {
             throw new PebbleException("file not found");
         }
+        System.out.println("pebble file read completed, ready to parse...");
+        System.out.println("----------------------------------------------");
         while (lexer.hasNext()) {
             ASTree t = bp.parse(lexer);
             if (!(t instanceof NullStatement)) {
@@ -39,5 +43,6 @@ public class BasicInterpreter {
 //                    System.out.println("=> " + r);
             }
         }
+        System.out.println("\n----------------------------------------------");
     }
 }
